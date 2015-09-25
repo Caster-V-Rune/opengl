@@ -19,6 +19,6 @@ if(NOT OPENGL_FOUND)
 endif(NOT OPENGL_FOUND)
 
 set(CMAKE_CXX_FLAGS "-g -Wall -lglut -lGL -lGLU -lm")
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES lab01/main.cpp)
 add_executable(opengl ${SOURCE_FILES})
 target_link_libraries(opengl ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
